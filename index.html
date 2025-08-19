@@ -29,20 +29,16 @@
     .lado-derecho {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
-      min-width: 320px;
       gap: 10px;
+      min-width: 320px;
     }
 
     .lado-derecho img {
       max-width: 300px;
       height: auto;
-    }
-
-    .botones {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      margin-bottom: 15px;
     }
 
     .botones a {
@@ -78,8 +74,7 @@
 </head>
 <body>
   <div class="contenedor">
-
-    <!-- Ficha descriptiva a la izquierda -->
+    <!-- Columna izquierda: ficha -->
     <div class="ficha">
       <p><strong>Código de referencia:</strong> EC BMG-AHCD / AHCDAC005753</p>
       <p><strong>Fondo:</strong> Archivo Camilo Destruge de la Biblioteca Municipal de Guayaquil</p>
@@ -146,15 +141,15 @@
       <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar durante el primer semestre de 1825. Las cartas han sido documentadas en diferentes publicaciones.</p>
     </div>
 
-    <!-- Imagen y botones a la derecha -->
+    <!-- Columna derecha: logo, imagen y botones PDF -->
     <div class="lado-derecho">
+      <img src="logo.png" alt="Logo de la institución" />
       <img src="manuscrito.png" alt="Imagen del manuscrito" />
       <div class="botones">
         <a href="optimized_victoria-junin.pdf" target="_blank"><button>Ver PDF</button></a>
         <a href="optimized_victoria-junin.pdf" download><button>Descargar PDF</button></a>
       </div>
     </div>
-
   </div>
 </body>
 </html>
