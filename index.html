@@ -7,10 +7,31 @@
   <link rel="stylesheet" href="estilo.css" />
   <style>
     body {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    header img.logo {
+      max-width: 100px;
+      height: auto;
+    }
+
+    header .titulo-header h1, 
+    header .titulo-header h2 {
+      margin: 0;
     }
 
     .contenedor {
@@ -29,7 +50,6 @@
     .lado-derecho {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       align-items: center;
       gap: 10px;
       min-width: 320px;
@@ -38,11 +58,19 @@
     .lado-derecho img {
       max-width: 300px;
       height: auto;
-      margin-bottom: 15px;
+    }
+
+    .botones {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      align-items: center;
     }
 
     .botones a {
       text-decoration: none;
+      width: 100%;
     }
 
     .botones button {
@@ -73,8 +101,19 @@
   </style>
 </head>
 <body>
+
+  <!-- HEADER CON LOGO -->
+  <header>
+    <img src="logo.png" alt="Logo institucional" class="logo" />
+    <div class="titulo-header">
+      <h1>Ficha Archivística</h1>
+      <h2>Victoria de Junín: Canto a Bolívar</h2>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
   <div class="contenedor">
-    <!-- Columna izquierda: ficha -->
+    <!-- FICHA A LA IZQUIERDA -->
     <div class="ficha">
       <p><strong>Código de referencia:</strong> EC BMG-AHCD / AHCDAC005753</p>
       <p><strong>Fondo:</strong> Archivo Camilo Destruge de la Biblioteca Municipal de Guayaquil</p>
@@ -141,9 +180,8 @@
       <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar durante el primer semestre de 1825. Las cartas han sido documentadas en diferentes publicaciones.</p>
     </div>
 
-    <!-- Columna derecha: logo, imagen y botones PDF -->
+    <!-- IMAGEN Y BOTONES PDF A LA DERECHA -->
     <div class="lado-derecho">
-      <img src="logo.png" alt="Logo de la institución" />
       <img src="manuscrito.png" alt="Imagen del manuscrito" />
       <div class="botones">
         <a href="optimized_victoria-junin.pdf" target="_blank"><button>Ver PDF</button></a>
