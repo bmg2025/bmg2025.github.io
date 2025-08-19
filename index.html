@@ -15,8 +15,9 @@
 
     .contenedor {
       display: flex;
-      max-width: 1200px;
       gap: 20px;
+      max-width: 1200px;
+      align-items: flex-start;
     }
 
     .lado-izquierdo {
@@ -32,9 +33,16 @@
       margin-bottom: 15px;
     }
 
-    .botones {
+    .ficha {
+      max-width: 700px;
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    .lado-derecho {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       gap: 10px;
     }
 
@@ -49,16 +57,11 @@
       color: white;
       border-radius: 5px;
       cursor: pointer;
+      width: 150px;
     }
 
     .botones button:hover {
       background-color: #666;
-    }
-
-    .ficha {
-      max-width: 800px;
-      text-align: justify;
-      line-height: 1.5;
     }
 
     h3 {
@@ -78,10 +81,6 @@
   <div class="contenedor">
     <div class="lado-izquierdo">
       <img src="manuscrito.png" alt="Imagen del manuscrito" />
-      <div class="botones">
-        <a href="optimized_victoria-junin.pdf" target="_blank"><button>Ver PDF</button></a>
-        <a href="optimized_victoria-junin.pdf" download><button>Descargar PDF</button></a>
-      </div>
     </div>
 
     <div class="ficha">
@@ -149,10 +148,16 @@
       <h3>Área 6: Notas</h3>
       <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar durante el primer semestre de 1825. Las cartas han sido documentadas en diferentes publicaciones.</p>
     </div>
+
+    <div class="lado-derecho">
+      <div class="botones">
+        <a href="optimized_victoria-junin.pdf" target="_blank"><button>Ver PDF</button></a>
+        <a href="optimized_victoria-junin.pdf" download><button>Descargar PDF</button></a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
-
 
 
 
