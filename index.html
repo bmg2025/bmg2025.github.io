@@ -9,19 +9,23 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
     }
 
+    /* CABECERA */
     header {
       display: flex;
       align-items: center;
       gap: 20px;
       width: 100%;
       max-width: 1200px;
+      padding: 10px 20px;
+      background-color: #f5f5f5;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     header img.logo {
@@ -34,19 +38,23 @@
       margin: 0;
     }
 
+    /* CONTENEDOR PRINCIPAL */
     .contenedor {
       display: flex;
       gap: 20px;
       max-width: 1200px;
       align-items: flex-start;
+      justify-content: center;
     }
 
+    /* FICHA CENTRADA */
     .ficha {
       max-width: 700px;
       text-align: justify;
       line-height: 1.5;
     }
 
+    /* LADO DERECHO: imagen + botones */
     .lado-derecho {
       display: flex;
       flex-direction: column;
@@ -98,24 +106,40 @@
     li {
       margin-bottom: 5px;
     }
+
+    /* RESPONSIVE */
+    @media (max-width: 1000px) {
+      .contenedor {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .lado-derecho {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .lado-derecho img {
+        max-width: 250px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- CABECERA CON LOGO -->
+  <!-- CABECERA -->
   <header>
-    <div class="encabezado">
-      <img src="logo.png" alt="Logo institucional" class="logo" />
-      <div class="titulo-header">
-        <h1>Ficha Archivística</h1>
-        <h2>Victoria de Junín: Canto a Bolívar</h2>
-      </div>
+    <img src="logo.png" alt="Logo institucional" class="logo" />
+    <div class="titulo-header">
+      <h1>Ficha Archivística</h1>
+      <h2>Victoria de Junín: Canto a Bolívar</h2>
     </div>
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
   <div class="contenedor">
-    <!-- FICHA A LA IZQUIERDA -->
+    <!-- FICHA CENTRADA -->
     <div class="ficha">
       <p><strong>Código de referencia:</strong> EC BMG-AHCD / AHCDAC005753</p>
       <p><strong>Fondo:</strong> Archivo Camilo Destruge de la Biblioteca Municipal de Guayaquil</p>
@@ -183,7 +207,7 @@
       <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar durante el primer semestre de 1825. Las cartas han sido documentadas en diferentes publicaciones.</p>
     </div>
 
-    <!-- IMAGEN Y BOTONES PDF A LA DERECHA -->
+    <!-- LADO DERECHO: IMAGEN + BOTONES PDF -->
     <div class="lado-derecho">
       <img src="manuscrito.png" alt="Imagen del manuscrito" />
       <div class="botones">
@@ -192,8 +216,9 @@
       </div>
     </div>
   </div>
+
 </body>
-</html>
+
 
 
 
