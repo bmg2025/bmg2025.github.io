@@ -1,123 +1,84 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ficha Archivística - Victoria de Junín</title>
-  <link rel="stylesheet" href="estilo.css" />
-</head>
-<body>
-  <header>
-    <div class="encabezado">
-      <img src="logo.png" alt="Logo del Archivo" class="logo">
-      <h1>Ficha Archivística</h1>
-      <h2>Victoria de Junín</h2>
-    </div>
-  </header>
-
-  <main>
-    <section class="descripcion">
-      <p>
-        Este documento histórico corresponde a la batalla de Junín, 
-        un acontecimiento clave en la independencia sudamericana.
-      </p>
-      <p>
-        El archivo conserva una copia digitalizada en formato PDF y 
-        una representación gráfica del manuscrito original.
-      </p>
-    </section>
-
-    <section class="documentos">
-      <h3>Archivos Disponibles</h3>
-      <ul>
-        <li><a href="optimized_victoria-junin.pdf" target="_blank">Ver PDF</a></li>
-        <li><img src="manuscrito.png" alt="Manuscrito de la Victoria de Junín" class="imagen-doc"></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>Archivo Histórico Nacional - 2025</p>
-  </footer>
-</body>
-</html>
-🎨 Archivo estilo.css
-css
-Copiar
-Editar
+/* === Estilos generales === */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  background: #fafafa;
+  color: #222;
   line-height: 1.6;
 }
 
+/* === Cabecera === */
 header {
-  background: #003366;
-  color: white;
-  padding: 20px 10px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 15px 30px;
+  border-bottom: 2px solid #ddd;
 }
 
-header .logo {
-  width: 80px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
+header img {
+  height: 70px;
+  margin-right: 20px;
 }
 
-h1, h2 {
-  margin: 5px 0;
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
 }
 
+header h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #666;
+  font-weight: normal;
+}
+
+/* === Contenido principal === */
 main {
-  padding: 20px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.descripcion p {
-  margin-bottom: 15px;
-  text-align: justify;
+h3 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
 
-.documentos {
-  margin-top: 20px;
+/* === Listas === */
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.documentos h3 {
+ul li {
   margin-bottom: 10px;
 }
 
-.documentos ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
+ul li strong {
+  color: #000;
 }
 
-.documentos li {
-  margin: 10px 0;
+/* === Imagen del manuscrito === */
+img {
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
-.documentos a {
-  color: #003366;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.documentos a:hover {
-  text-decoration: underline;
-}
-
-.imagen-doc {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-footer {
-  background: #f4f4f4;
-  text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
-  margin-top: 20px;
+/* === Notas === */
+.notas {
+  background: #f9f9f9;
+  border-left: 4px solid #4a90e2;
+  padding: 15px 20px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #333;
 }
