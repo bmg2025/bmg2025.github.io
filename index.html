@@ -11,24 +11,27 @@
       display: flex;
       align-items: center;
       gap: 16px;
-      background: #001f3f; /* Azul marino */
-      color: #fff;
+      background-color: #001f3f !important; /* azul marino */
+      color: white !important;
       padding: 16px 24px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra ligera */
     }
     header .logo {
       width: 80px;
       height: auto;
       object-fit: contain;
     }
-    header .titulo-header h1 {
+    header .titulo-header h1,
+    header .titulo-header h2 {
+      color: white !important;
       margin: 0;
+    }
+    header .titulo-header h1 {
       font-size: 28px;
       line-height: 1.1;
     }
     header .titulo-header h2 {
-      margin: 4px 0 0 0;
+      margin-top: 4px;
       font-weight: 500;
       font-size: 18px;
       line-height: 1.1;
@@ -87,18 +90,18 @@
     .botones button {
       padding: 10px 16px;
       border: none;
-      background: linear-gradient(135deg, #001f3f, #003366); /* Gradiente azul */
-      color: #fff;
-      border-radius: 8px;
+      background-color: #001f3f !important; /* azul marino */
+      color: white !important;
+      border-radius: 6px;
       cursor: pointer;
       width: 180px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra ligera */
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* transición suave */
     }
     .botones button:hover {
-      background: linear-gradient(135deg, #003366, #001f3f);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      background-color: #003366 !important; /* azul más claro al pasar mouse */
+      transform: translateY(-2px); /* ligero levantamiento al pasar mouse */
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25); /* sombra más intensa al pasar mouse */
     }
 
     ul { padding-left: 20px; }
@@ -136,33 +139,61 @@
 
       <h3>Área 2: Contexto</h3>
       <p><strong>Nombre del productor:</strong> José Joaquin de Olmedo y Maruri (1780-1847)</p>
-      <p><strong>Historia institucional:</strong> José Joaquín Olmedo (Guayaquil, 1780-1847) fue un destacado escritor, político y abogado. Considerado uno de los grandes poetas de la literatura hispanoamericana, su obra más célebre, La victoria de Junín. Canto a Bolívar (1825)...
-      </p>
-      <p><strong>Historia archivística:</strong> Se conoce que el documento estuvo en manos de las hermanas Cecile y Losette Torres Caicedo...</p>
+      <p><strong>Historia institucional:</strong> José Joaquín Olmedo (Guayaquil, 1780-1847) fue un destacado escritor, político y abogado. Considerado uno de los grandes poetas de la literatura hispanoamericana, su obra más célebre, La victoria de Junín. Canto a Bolívar (1825).
+      Como político, Olmedo desempeñó un rol crucial en la emancipación de Guayaquil. Fue uno de los líderes de la revolución del 9 de octubre de 1820, que marcó el inicio de la independencia ecuatoriana. Redactó el acta de independencia y participó activamente en la organización del nuevo gobierno de la provincia libre e independiente de Guayaquil (1820-1822). Su elocuencia y liderazgo lo llevaron a ocupar cargos importantes, como representante americano en la Corte de Cádiz en 1811, diputado en el Congreso Constituyente del Perú en 1823 y diputado a las Convenciones Nacionales que originaron el Estado del Ecuador en 1830 y la República del Ecuador en 1835, además de Presidente del Gobierno Provisorio que gobernó la República de Ecuador en 1845, y diputado de la Convención Nacional de ese mismo año. Olmedo fue un destacado defensor de los ideales republicanos y la unidad latinoamericana. Su pensamiento liberal y su compromiso con la justicia social lo convirtieron en un referente de la época. A pesar de exilios y desafíos políticos, su legado perdura en la literatura y la historia regional, siendo recordado como un patriota que unió la pluma y la acción para forjar una nación libre. La Biblioteca Municipal de Guayaquil es una de las instituciones culturales de servicio público más antiguas del Ecuador, fundada en 1862 por el político y publicista Pedro Carbo Noboa, cuando era el Presidente de la Municipalidad de Guayaquil, con la donación de los primeros 100 volúmenes. Entre otras donaciones y adquisiciones, la Biblioteca Municipal de Guayaquil ha conformado uno de los repositorios bibliográficos más significativos del Ecuador, con más de 270.000 títulos a disposición del público. La Biblioteca Municipal de Guayaquil se ha ubicado en diferentes inmuebles a lo largo de su historia, hasta localizarse en su emplazamiento actual en el centro histórico de la ciudad (Av. República del Guayaquil, entre Pedro Carbo y Chile) en un inmueble patrimonial construido en 1958 y que forma parte de la arquitectura del movimiento moderno de Guayaquil. La Biblioteca Municipal de Guayaquil está integrada por catorce (14) fondos bibliográficos y cinco (5) salas de lectura, además de una Biblioteca anexa completa de autores nacionales y extranjeros denominada “Carlos A. Rolando” y el Archivo Histórico “Camilo Destruge”, que completan la documentación dispuesta para consulta e investigación.</p>
+      <p><strong>Historia archivística:</strong> Se conoce que el documento estuvo en manos de las hermanas Cecile y Losette Torres Caicedo, domiciliadas en España, de acuerdo con la razón notarial sentada por el notario Don Raimundo Clar Garau de Palma de Mallorca (España). Actualmente se encuentra bajo custodia de la Biblioteca Municipal de Guayaquil.</p>
       <p><strong>Forma de ingreso:</strong> Donado el 24 abril 1987, según razón notarial.</p>
 
       <h3>Área 3: Contenido y estructura</h3>
-      <p><strong>Alcance y contenido:</strong> Descripción poética en ochocientos doce (812) versos, escritos a mano...</p>
-      <p><strong>Valoración, selección, eliminación:</strong> Para la presente postulación, este documento ha sido parte de un proceso de valoración y selección...</p>
-      <p><strong>Organización:</strong> El sistema de preservación que se ha organizado por la administración municipal...</p>
+      <p><strong>Alcance y contenido:</strong> Descripción poética en ochocientos doce (812) versos, escritos a mano, de los hechos ocurridos en las batallas de Junín y Ayacucho, firmada por José Joaquín Olmedo, con un anexo de veintiún (21) notas escritas a mano por el mismo autor, encuadernado con guarda y filos dorados. Este poema es un manuscrito único, que celebra la independencia de América del Sur, exaltando la victoria de Simón Bolívar en la batalla de Junín del 6 de agosto de 1824. Este poema épico-lírico, se destaca por su riqueza estilística, combinando neoclasicismo y prerromanticismo, y por su profundidad temática, vinculando la gesta independentista con el pasado indígena. Su singularidad radica en su proceso de redacción, que involucró un intercambio epistolar con Simón Bolívar durante los primeros meses del año 1825, y en su temprana relación con los hechos ocurridos. El poema refleja un momento crucial de transición al autogobierno republicano, capturando la épica de la independencia. Su importancia para la memoria de América Latina y el Caribe se debe tanto a su reconocimiento como patrimonio documental en el Ecuador y las declaratorias patrimoniales que sus obras impresas han tenido en el Perú, así como por su valor testimonial, estético y político, que fortalece la identidad y la memoria colectiva de Latino América y el Caribe.</p>
+      <p><strong>Valoración, selección, eliminación:</strong> Para la presente postulación, este documento ha sido parte de un proceso de valoración y selección del conjunto de la documentación archivística que reposa en la Biblioteca Municipal de Guayaquil. Se ha seleccionado este poema tanto por su “alcance y contenido”, que fue detallado en el apartado anterior, como por cumplirse este año 2025 los doscientos (200) años de la publicación de la edición príncipe del poema en Guayaquil. No ha pasado por ninguna fase de eliminación de archivos.</p>
+      <p><strong>Organización:</strong> El sistema de preservación que se ha organizado por la administración municipal para la conservación consiste en el mantenimiento del manuscrito en una caja de cartón, dentro de una caja metálica, que se encuentra a su vez dentro de una bóveda de seguridad, de manera tal que está protegido de la luz en un ambiente climatizado. El acceso al espacio de conservación del manuscrito es restringido, debiendo obtenerse la autorización del Jefe del Departamento de Biblioteca de la Municipalidad de Guayaquil. El documento es parte de la colección de manuscritos del Archivo Histórico “Camilo Destruge” y está clasificado como EC861OLMv, con código de barras AHCDAC005753.</p>
 
       <h3>Área 4: Condiciones de acceso y uso</h3>
-      <p><strong>Condiciones de acceso:</strong> El acceso físico al manuscrito está restringido...</p>
+      <p><strong>Condiciones de acceso:</strong> El acceso físico al manuscrito está restringido de forma exclusiva para el desempeño de actividades de investigación, monitoreo y conservación preventiva, previa obtención de la autorización del Jefe del Departamento de Biblioteca de la Municipalidad de Guayaquil.</p>
       <p><strong>Condiciones de reproducción:</strong> Para reproducción del documento físico únicamente se admiten fotografías sin flash,</p>
       <p><strong>Lengua y escritura:</strong> Español manuscrito, caligrafía cursiva.</p>
-      <p><strong>Características físicas:</strong> El manuscrito está encuadernado en pasta dura...</p>
-      <p><strong>Instrumentos de descripción:</strong> Existe la ficha electrónica del manuscrito...</p>
+      <p><strong>Características físicas:</strong> El manuscrito está encuadernado en pasta dura, con páginas de guarda, y conservado en una caja de cartón, dentro de una caja metálica, que se encuentra a su vez dentro de una bóveda de seguridad. Para el acceso al manuscrito se debe obtener la debida autorización. Asimismo, para su manipulación se debe utilizar guantes y material estéril. En cuanto a la versión digital, se la puede visualizar desde cualquier equipo tecnológico (laptop, tablet, teléfono móvil), que tengan software de lectura de archivos PDF.</p>
+      <p><strong>Instrumentos de descripción:</strong> Existe la ficha electrónica del manuscrito, se puede acceder a ella en el siguiente enlace: <a href="https://bmg2025.github.io/" target="_blank" rel="noopener">https://bmg2025.github.io/</a></p>
 
       <h3>Área 5: Documentación asociada</h3>
       <p><strong>Nota de Publicaciones:</strong></p>
       <ul>
         <li>Olmedo, José Joaquin. (1826) La victoria de Junín. Canto a Bolívar. Impreso en París. 100 páginas.</li>
         <li>Olmedo, José Joaquin. (1826) La victoria de Junín. Canto a Bolívar. reimpreso en Londres. 80 páginas.</li>
-        <li>...</li>
+        <li>Olmedo, José Joaquin. (1883) La victoria de Junín. Canto a Bolívar. impreso en Londres. 72 páginas.</li>
+        <li>Andrade Reimers, Luis. (1993). Olmedo : el estadista. Quito, Ediguías.</li>
+        <li>Carbo, Pedro, (1880). Biografía de Olmedo. Guayaquil, La Nación.</li>
+        <li>Castillo, Abel Romeo. (1973). Olmedo entre San Martin y Bolívar. Guayaquil, Casa de la Cultura Ecuatoriana, Núcleo del Guayas.</li>
+        <li>Castillo, Abel Romeo. (1980). Olmedo : prócer y poeta. Guayaquil, Instituto Olmediano del Ecuador.</li>
+        <li>Espinoza Pólit, Aurelio. (1955). Olmedo en la historia y en las letras; siete estudios. Quito, Clásica.</li>
+        <li>Gómez Iturralde, José Antonio. Paredes Ramírez, Willington. (2001). Vigencia y permanencia de Olmedo. Guayaquil, Banco Central del Ecuador. Archivo Histórico del Guayas.</li>
+        <li>Herrera, Pablo (1887). Apuntes biográficos de D. José Joaquín Olmedo. Quito, Impr. de Juan Pablo Sanz.</li>
+        <li>Icaza, Luis Noboa (1979). El monumento a José Joaquín de Olmedo en Guayaquil : homenaje al poeta en el bicentenario de su nacimiento. Guayaquil, Separata de la Revista del Archivo Histórico del Guayas, no. 15</li>
+        <li>La victoria de Junín : edición de estudio. (1919). Quito, Tip. de la Prensa Católica. Folletos Nacionales, Serie 1, t. 327</li>
+        <li>Mariscal de Guevara, María Luisa. (1981). José Joaquín de Olmedo : poeta y luchador. Guayaquil, Del Pacífico.</li>
+        <li>Moreno Mora, Vicente. (1946). José Joaquín Olmedo. Cuenca, Tall. Tip. del Concejo Cantonal de Cuenca.</li>
+        <li>Muñoz Vicuña, Elías. (1980). Biografía de Olmedo: ensayo. Guayaquil. Imp. de la Universidad de Guayaquil.</li>
+        <li>Noboa Icaza, Luis. (1973). Estudios sobre Olmedo. Guayaquil. Junta Cívica de Guayaquil. Archivo Histórico del Guayas.</li>
+        <li>Olmedo, José Joaquín. (1896). Poesías. París, Garnier Hermanos.</li>
+        <li>Olmedo, José Joaquín. (1917). La victoria de Junín, canto a Bolívar. s.l., Impr. Municipal.</li>
+        <li>Olmedo, José Joaquín de. (1976). Alfabeto para un niño, canción al nueve de octubre, canto a Guayaquil y décimas a Guayaquil. Guayaquil, Impr. Municipal.</li>
+        <li>Olmedo, José Joaquín de. (1945). Obras completas : poesías. Quito, Tall. Gráf. Nacionales. Clásicos Ecuatorianos ; v. 5.</li>
+        <li>Olmedo, José Joaquín de. (1975). La victoria de Junín, canto a Bolívar. Guayaquil, Imp. Municipal.</li>
+        <li>Olmedo, José Joaquín de. (1975). La victoria de Junín, canto a Bolívar. Quito, Offset Graba.</li>
+        <li>Olmedo, José Joaquín de. (2006). Alfabeto para un niño. Guayaquil, Municipalidad de Guayaquil. Dirección de Acción Social y Educación. II Bienal Nacional de Arte No Visual.</li>
+        <li>Olmedo, José Joaquín de. (s.f.). Poesías. Barcelona, Casa Editorial MAUCCI.</li>
+        <li>Rendón, Víctor Manuel. Olmedo : Homme D'etat el poete americaín chautre de Bolívar. (s.f.) París Librairie Nilsson.</li>
+        <li>Reseña histórica de la inauguración de la estatua de Olmedo en Guayaquil el 9 de octubre de 1892. (1893). Guayaquil, El Tiempo.</li>
+        <li>Rodríguez Castelo, Hernán (2009). Olmedo : el hombre y el escritor. Quito, Academia Nacional de Historia.</li>
+        <li>Vásconez, Francisco. (1920). Olmedo y sus obras : estudio histórico-crítico. Guayaquil, Impr. Gutenberg.</li>
+        <li>Vásquez, Misael, Padre, S. I. (1931). La victoria de Junín : canto a Bolívar. Quito, Ecuatoriana. Folletos Nacionales, Serie 3, t. 83</li>
+        <li>Vallejo, R. (2013). Olmedo, cantautor de la independencia. La victoria de Junín. Canto a Bolívar. Universidad Andina Simón Bolívar. Ediciones Doce Calles. Corporación Editora Nacional, 35-73</li>
+        <li>Guevara, Dario (1958). Olmedo: Actor y cantor de la gran epopeya libertadora de América. Casa de la Cultura Ecuatoriana, Quito.</li>
       </ul>
 
       <h3>Área 6: Notas</h3>
-      <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar...</p>
+      <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar durante el primer semestre de 1825. Las cartas han sido documentadas en diferentes publicaciones.</p>
     </div>
 
     <!-- Columna derecha: imagen + botones -->
