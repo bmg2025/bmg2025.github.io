@@ -6,6 +6,37 @@
   <title>Ficha Archivística - Victoria de Junín</title>
   <link rel="stylesheet" href="estilo.css" />
   <style>
+    /* Cabecera */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: #001f3f !important; /* azul marino */
+      color: white !important;
+      padding: 16px 24px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra ligera */
+    }
+    header .logo {
+      width: 80px;
+      height: auto;
+      object-fit: contain;
+    }
+    header .titulo-header h1,
+    header .titulo-header h2 {
+      color: white !important;
+      margin: 0;
+    }
+    header .titulo-header h1 {
+      font-size: 28px;
+      line-height: 1.1;
+    }
+    header .titulo-header h2 {
+      margin-top: 4px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.1;
+    }
+
     /* Layout principal */
     body {
       font-family: Arial, sans-serif;
@@ -59,14 +90,19 @@
     .botones button {
       padding: 10px 16px;
       border: none;
-      background-color: #001f3f; /* mismo azul marino de cabecera */
-      color: white;
+      background-color: #001f3f !important; /* azul marino */
+      color: white !important;
       border-radius: 6px;
       cursor: pointer;
       width: 180px;
-      transition: background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra ligera */
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* transición suave */
     }
-    .botones button:hover { background-color: #003366; } /* azul más claro al pasar mouse */
+    .botones button:hover {
+      background-color: #003366 !important; /* azul más claro al pasar mouse */
+      transform: translateY(-2px); /* ligero levantamiento al pasar mouse */
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25); /* sombra más intensa al pasar mouse */
+    }
 
     ul { padding-left: 20px; }
     li { margin-bottom: 6px; }
@@ -82,11 +118,11 @@
 <body>
 
   <!-- CABECERA -->
-  <header style="background-color: #001f3f; color: white; display: flex; align-items: center; gap: 16px; padding: 16px 24px;">
+  <header>
     <img src="logo.png" alt="Logo institucional" class="logo" />
     <div class="titulo-header">
-      <h1 style="color: white; margin: 0; font-size: 28px; line-height: 1.1;">Ficha Archivística</h1>
-      <h2 style="color: white; margin: 4px 0 0 0; font-weight: 500; font-size: 18px; line-height: 1.1;">Victoria de Junín: Canto a Bolívar</h2>
+      <h1>Ficha Archivística</h1>
+      <h2>Victoria de Junín: Canto a Bolívar</h2>
     </div>
   </header>
 
@@ -103,16 +139,14 @@
 
       <h3>Área 2: Contexto</h3>
       <p><strong>Nombre del productor:</strong> José Joaquin de Olmedo y Maruri (1780-1847)</p>
-      <p><strong>Historia institucional:</strong> José Joaquín Olmedo (Guayaquil, 1780-1847) fue un destacado escritor, político y abogado. Considerado uno de los grandes poetas de la literatura hispanoamericana, su obra más célebre, La victoria de Junín. Canto a Bolívar (1825). Como político, Olmedo desempeñó un rol crucial en la emancipación de Guayaquil. Fue uno de los líderes de la revolución del 9 de octubre de 1820, que marcó el inicio de la independencia ecuatoriana. Redactó el acta de independencia y participó activamente en la organización del nuevo gobierno de la provincia libre e independiente de Guayaquil (1820-1822). Su elocuencia y liderazgo lo llevaron a ocupar cargos importantes, como representante americano en la Corte de Cádiz en 1811, diputado en el Congreso Constituyente del Perú en 1823 y diputado a las Convenciones Nacionales que originaron el Estado del Ecuador en 1830 y la República del Ecuador en 1835, además de Presidente del Gobierno Provisorio que gobernó la República de Ecuador en 1845, y diputado de la Convención Nacional de ese mismo año. Olmedo fue un destacado defensor de los ideales republicanos y la unidad latinoamericana. Su pensamiento liberal y su compromiso con la justicia social lo convirtieron en un referente de la época. A pesar de exilios y desafíos políticos, su legado perdura en la literatura y la historia regional, siendo recordado como un patriota que unió la pluma y la acción para forjar una nación libre. La Biblioteca Municipal de Guayaquil es una de las instituciones culturales de servicio público más antiguas del Ecuador, fundada en 1862 por el político y publicista Pedro Carbo Noboa, cuando era el Presidente de la Municipalidad de Guayaquil, con la donación de los primeros 100 volúmenes. Entre otras donaciones y adquisiciones, la Biblioteca Municipal de Guayaquil ha conformado uno de los repositorios bibliográficos más significativos del Ecuador, con más de 270.000 títulos a disposición del público. La Biblioteca Municipal de Guayaquil se ha ubicado en diferentes inmuebles a lo largo de su historia, hasta localizarse en su emplazamiento actual en el centro histórico de la ciudad (Av. República del Guayaquil, entre Pedro Carbo y Chile) en un inmueble patrimonial construido en 1958 y que forma parte de la arquitectura del movimiento moderno de Guayaquil. La Biblioteca Municipal de Guayaquil está integrada por catorce (14) fondos bibliográficos y cinco (5) salas de lectura, además de una Biblioteca anexa completa de autores nacionales y extranjeros denominada “Carlos A. Rolando” y el Archivo Histórico “Camilo Destruge”, que completan la documentación dispuesta para consulta e investigación.</p>
-
+      <p><strong>Historia institucional:</strong> José Joaquín Olmedo (Guayaquil, 1780-1847) fue un destacado escritor, político y abogado. Considerado uno de los grandes poetas de la literatura hispanoamericana, su obra más célebre, La victoria de Junín. Canto a Bolívar (1825).
+      Como político, Olmedo desempeñó un rol crucial en la emancipación de Guayaquil. Fue uno de los líderes de la revolución del 9 de octubre de 1820, que marcó el inicio de la independencia ecuatoriana. Redactó el acta de independencia y participó activamente en la organización del nuevo gobierno de la provincia libre e independiente de Guayaquil (1820-1822). Su elocuencia y liderazgo lo llevaron a ocupar cargos importantes, como representante americano en la Corte de Cádiz en 1811, diputado en el Congreso Constituyente del Perú en 1823 y diputado a las Convenciones Nacionales que originaron el Estado del Ecuador en 1830 y la República del Ecuador en 1835, además de Presidente del Gobierno Provisorio que gobernó la República de Ecuador en 1845, y diputado de la Convención Nacional de ese mismo año. Olmedo fue un destacado defensor de los ideales republicanos y la unidad latinoamericana. Su pensamiento liberal y su compromiso con la justicia social lo convirtieron en un referente de la época. A pesar de exilios y desafíos políticos, su legado perdura en la literatura y la historia regional, siendo recordado como un patriota que unió la pluma y la acción para forjar una nación libre. La Biblioteca Municipal de Guayaquil es una de las instituciones culturales de servicio público más antiguas del Ecuador, fundada en 1862 por el político y publicista Pedro Carbo Noboa, cuando era el Presidente de la Municipalidad de Guayaquil, con la donación de los primeros 100 volúmenes. Entre otras donaciones y adquisiciones, la Biblioteca Municipal de Guayaquil ha conformado uno de los repositorios bibliográficos más significativos del Ecuador, con más de 270.000 títulos a disposición del público. La Biblioteca Municipal de Guayaquil se ha ubicado en diferentes inmuebles a lo largo de su historia, hasta localizarse en su emplazamiento actual en el centro histórico de la ciudad (Av. República del Guayaquil, entre Pedro Carbo y Chile) en un inmueble patrimonial construido en 1958 y que forma parte de la arquitectura del movimiento moderno de Guayaquil. La Biblioteca Municipal de Guayaquil está integrada por catorce (14) fondos bibliográficos y cinco (5) salas de lectura, además de una Biblioteca anexa completa de autores nacionales y extranjeros denominada “Carlos A. Rolando” y el Archivo Histórico “Camilo Destruge”, que completan la documentación dispuesta para consulta e investigación.</p>
       <p><strong>Historia archivística:</strong> Se conoce que el documento estuvo en manos de las hermanas Cecile y Losette Torres Caicedo, domiciliadas en España, de acuerdo con la razón notarial sentada por el notario Don Raimundo Clar Garau de Palma de Mallorca (España). Actualmente se encuentra bajo custodia de la Biblioteca Municipal de Guayaquil.</p>
       <p><strong>Forma de ingreso:</strong> Donado el 24 abril 1987, según razón notarial.</p>
 
       <h3>Área 3: Contenido y estructura</h3>
       <p><strong>Alcance y contenido:</strong> Descripción poética en ochocientos doce (812) versos, escritos a mano, de los hechos ocurridos en las batallas de Junín y Ayacucho, firmada por José Joaquín Olmedo, con un anexo de veintiún (21) notas escritas a mano por el mismo autor, encuadernado con guarda y filos dorados. Este poema es un manuscrito único, que celebra la independencia de América del Sur, exaltando la victoria de Simón Bolívar en la batalla de Junín del 6 de agosto de 1824. Este poema épico-lírico, se destaca por su riqueza estilística, combinando neoclasicismo y prerromanticismo, y por su profundidad temática, vinculando la gesta independentista con el pasado indígena. Su singularidad radica en su proceso de redacción, que involucró un intercambio epistolar con Simón Bolívar durante los primeros meses del año 1825, y en su temprana relación con los hechos ocurridos. El poema refleja un momento crucial de transición al autogobierno republicano, capturando la épica de la independencia. Su importancia para la memoria de América Latina y el Caribe se debe tanto a su reconocimiento como patrimonio documental en el Ecuador y las declaratorias patrimoniales que sus obras impresas han tenido en el Perú, así como por su valor testimonial, estético y político, que fortalece la identidad y la memoria colectiva de Latino América y el Caribe.</p>
-
       <p><strong>Valoración, selección, eliminación:</strong> Para la presente postulación, este documento ha sido parte de un proceso de valoración y selección del conjunto de la documentación archivística que reposa en la Biblioteca Municipal de Guayaquil. Se ha seleccionado este poema tanto por su “alcance y contenido”, que fue detallado en el apartado anterior, como por cumplirse este año 2025 los doscientos (200) años de la publicación de la edición príncipe del poema en Guayaquil. No ha pasado por ninguna fase de eliminación de archivos.</p>
-
       <p><strong>Organización:</strong> El sistema de preservación que se ha organizado por la administración municipal para la conservación consiste en el mantenimiento del manuscrito en una caja de cartón, dentro de una caja metálica, que se encuentra a su vez dentro de una bóveda de seguridad, de manera tal que está protegido de la luz en un ambiente climatizado. El acceso al espacio de conservación del manuscrito es restringido, debiendo obtenerse la autorización del Jefe del Departamento de Biblioteca de la Municipalidad de Guayaquil. El documento es parte de la colección de manuscritos del Archivo Histórico “Camilo Destruge” y está clasificado como EC861OLMv, con código de barras AHCDAC005753.</p>
 
       <h3>Área 4: Condiciones de acceso y uso</h3>
@@ -178,7 +212,6 @@
 
 </body>
 </html>
-
 
 
 
