@@ -4,27 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ficha Archivística - Victoria de Junín</title>
+  <link rel="stylesheet" href="estilo.css" />
   <style>
-    /* VARIABLES DE COLOR */
-    :root {
-      --azul-marino: #001f3f;
-      --azul-gradiente-inicio: #001f3f;
-      --azul-gradiente-fin: #003366;
-      --blanco: #ffffff;
-      --sombra: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    /* CABECERA */
+    /* Cabecera */
     header {
       display: flex;
       align-items: center;
       gap: 16px;
-      background: var(--azul-marino);
-      color: var(--blanco);
+      background: #001f3f; /* Azul marino */
+      color: #fff;
       padding: 16px 24px;
-      box-shadow: var(--sombra);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       border-radius: 8px;
-      flex-wrap: wrap;
     }
     header .logo {
       width: 80px;
@@ -43,28 +34,7 @@
       line-height: 1.1;
     }
 
-    /* MENÚ DE NAVEGACIÓN INTERNO */
-    nav {
-      margin-top: 12px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    nav a {
-      text-decoration: none;
-      color: var(--blanco);
-      background: linear-gradient(135deg, var(--azul-gradiente-inicio), var(--azul-gradiente-fin));
-      padding: 6px 12px;
-      border-radius: 6px;
-      box-shadow: var(--sombra);
-      transition: all 0.3s ease;
-    }
-    nav a:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    }
-
-    /* BODY Y CONTENEDOR PRINCIPAL */
+    /* Layout principal */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -72,7 +42,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: #f9f9f9;
     }
     .contenedor {
       display: flex;
@@ -82,10 +51,9 @@
       padding: 24px;
       box-sizing: border-box;
       align-items: flex-start;
-      flex-wrap: wrap;
     }
 
-    /* FICHA */
+    /* Columna de texto (ficha) */
     .ficha {
       flex: 1 1 700px;
       max-width: 800px;
@@ -94,7 +62,7 @@
     }
     h3 { margin-top: 20px; }
 
-    /* COLUMNA DERECHA: IMAGEN + BOTONES */
+    /* Columna derecha: imagen + botones */
     .lado-derecho {
       min-width: 320px;
       display: flex;
@@ -103,12 +71,10 @@
       gap: 12px;
     }
     .lado-derecho img {
-      max-width: 100%;
-      width: 300px;
+      max-width: 300px;
+      width: 100%;
       height: auto;
       display: block;
-      border-radius: 6px;
-      box-shadow: var(--sombra);
     }
     .botones {
       display: flex;
@@ -117,20 +83,20 @@
       width: 100%;
       align-items: center;
     }
-    .botones a { text-decoration: none; width: 100%; display: flex; justify-content: center; }
+    .botones a { text-decoration: none; }
     .botones button {
       padding: 10px 16px;
       border: none;
-      background: linear-gradient(135deg, var(--azul-gradiente-inicio), var(--azul-gradiente-fin));
-      color: var(--blanco);
+      background: linear-gradient(135deg, #001f3f, #003366); /* Gradiente azul */
+      color: #fff;
       border-radius: 8px;
       cursor: pointer;
       width: 180px;
-      box-shadow: var(--sombra);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
     }
     .botones button:hover {
-      background: linear-gradient(135deg, var(--azul-gradiente-fin), var(--azul-gradiente-inicio));
+      background: linear-gradient(135deg, #003366, #001f3f);
       transform: translateY(-2px);
       box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
@@ -138,15 +104,11 @@
     ul { padding-left: 20px; }
     li { margin-bottom: 6px; }
 
-    /* RESPONSIVE */
+    /* Responsive */
     @media (max-width: 1024px) {
       .contenedor { flex-direction: column; align-items: center; }
       .lado-derecho { order: 2; }
       .ficha { order: 1; }
-    }
-    @media (max-width: 480px) {
-      header { flex-direction: column; align-items: center; text-align: center; }
-      .botones button { width: 90%; }
     }
   </style>
 </head>
@@ -159,73 +121,51 @@
       <h1>Ficha Archivística</h1>
       <h2>Victoria de Junín: Canto a Bolívar</h2>
     </div>
-
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
-      <a href="#contexto">Contexto</a>
-      <a href="#contenido">Contenido</a>
-      <a href="#acceso">Acceso</a>
-      <a href="#documentacion">Documentación</a>
-      <a href="#notas">Notas</a>
-    </nav>
   </header>
 
   <!-- CONTENIDO -->
   <div class="contenedor">
+    <!-- Columna de texto -->
     <div class="ficha">
       <p><strong>Código de referencia:</strong> EC BMG-AHCD / AHCDAC005753</p>
       <p><strong>Fondo:</strong> Archivo Camilo Destruge de la Biblioteca Municipal de Guayaquil</p>
       <p><strong>Título:</strong> Manuscrito del Poema “La Victoria de Junín". Canto a Bolívar”, escrito por José Joaquin de Olmedo (1825)</p>
+      <p><strong>Fechas:</strong> 1825</p>
+      <p><strong>Nivel de descripción:</strong> Unidad documental original. Manuscrito</p>
+      <p><strong>Volumen y soporte:</strong> cuarenta y cuatro (44) folios manuscritos en tinta sobre papel de trapo con marca de agua que se lee HARRIS, 1811, sin considerar páginas de guarda y encuadernación.</p>
 
-      <h3 id="contexto">Área 2: Contexto</h3>
-      <p>Nombre del productor, historia institucional, historia archivística, forma de ingreso...</p>
+      <h3>Área 2: Contexto</h3>
+      <p><strong>Nombre del productor:</strong> José Joaquin de Olmedo y Maruri (1780-1847)</p>
+      <p><strong>Historia institucional:</strong> José Joaquín Olmedo (Guayaquil, 1780-1847) fue un destacado escritor, político y abogado. Considerado uno de los grandes poetas de la literatura hispanoamericana, su obra más célebre, La victoria de Junín. Canto a Bolívar (1825)...
+      </p>
+      <p><strong>Historia archivística:</strong> Se conoce que el documento estuvo en manos de las hermanas Cecile y Losette Torres Caicedo...</p>
+      <p><strong>Forma de ingreso:</strong> Donado el 24 abril 1987, según razón notarial.</p>
 
-      <h3 id="contenido">Área 3: Contenido y estructura</h3>
-      <p>Alcance y contenido, valoración, selección, eliminación, organización...</p>
+      <h3>Área 3: Contenido y estructura</h3>
+      <p><strong>Alcance y contenido:</strong> Descripción poética en ochocientos doce (812) versos, escritos a mano...</p>
+      <p><strong>Valoración, selección, eliminación:</strong> Para la presente postulación, este documento ha sido parte de un proceso de valoración y selección...</p>
+      <p><strong>Organización:</strong> El sistema de preservación que se ha organizado por la administración municipal...</p>
 
-      <h3 id="acceso">Área 4: Condiciones de acceso y uso</h3>
-      <p>Condiciones de acceso, reproducción, lengua y escritura, características físicas, instrumentos de descripción...</p>
+      <h3>Área 4: Condiciones de acceso y uso</h3>
+      <p><strong>Condiciones de acceso:</strong> El acceso físico al manuscrito está restringido...</p>
+      <p><strong>Condiciones de reproducción:</strong> Para reproducción del documento físico únicamente se admiten fotografías sin flash,</p>
+      <p><strong>Lengua y escritura:</strong> Español manuscrito, caligrafía cursiva.</p>
+      <p><strong>Características físicas:</strong> El manuscrito está encuadernado en pasta dura...</p>
+      <p><strong>Instrumentos de descripción:</strong> Existe la ficha electrónica del manuscrito...</p>
 
-      <h3 id="documentacion">Área 5: Documentación asociada</h3>
+      <h3>Área 5: Documentación asociada</h3>
+      <p><strong>Nota de Publicaciones:</strong></p>
       <ul>
         <li>Olmedo, José Joaquin. (1826) La victoria de Junín. Canto a Bolívar. Impreso en París. 100 páginas.</li>
-        <li>Olmedo, José Joaquin. (1826) La victoria de Junín. Canto a Bolívar. Reimpreso en Londres. 80 páginas.</li>
-        <li>Olmedo, José Joaquin. (1883) La victoria de Junín. Canto a Bolívar. Impreso en Londres. 72 páginas.</li>
-        <li>Andrade Reimers, Luis. (1993). Olmedo: el estadista. Quito, Ediguías.</li>
-        <li>Carbo, Pedro. (1880). Biografía de Olmedo. Guayaquil, La Nación.</li>
-        <li>Castillo, Abel Romeo. (1973). Olmedo entre San Martin y Bolívar. Guayaquil, Casa de la Cultura Ecuatoriana, Núcleo del Guayas.</li>
-        <li>Castillo, Abel Romeo. (1980). Olmedo: prócer y poeta. Guayaquil, Instituto Olmediano del Ecuador.</li>
-        <li>Espinoza Pólit, Aurelio. (1955). Olmedo en la historia y en las letras; siete estudios. Quito, Clásica.</li>
-        <li>Gómez Iturralde, José Antonio. Paredes Ramírez, Willington. (2001). Vigencia y permanencia de Olmedo. Guayaquil, Banco Central del Ecuador. Archivo Histórico del Guayas.</li>
-        <li>Herrera, Pablo (1887). Apuntes biográficos de D. José Joaquín Olmedo. Quito, Impr. de Juan Pablo Sanz.</li>
-        <li>Icaza, Luis Noboa (1979). El monumento a José Joaquín de Olmedo en Guayaquil: homenaje al poeta en el bicentenario de su nacimiento. Guayaquil, Separata de la Revista del Archivo Histórico del Guayas, no. 15.</li>
-        <li>La victoria de Junín: edición de estudio. (1919). Quito, Tip. de la Prensa Católica. Folletos Nacionales, Serie 1, t. 327.</li>
-        <li>Mariscal de Guevara, María Luisa. (1981). José Joaquín de Olmedo: poeta y luchador. Guayaquil, Del Pacífico.</li>
-        <li>Moreno Mora, Vicente. (1946). José Joaquín Olmedo. Cuenca, Tall. Tip. del Concejo Cantonal de Cuenca.</li>
-        <li>Muñoz Vicuña, Elías. (1980). Biografía de Olmedo: ensayo. Guayaquil, Imp. de la Universidad de Guayaquil.</li>
-        <li>Noboa Icaza, Luis. (1973). Estudios sobre Olmedo. Guayaquil. Junta Cívica de Guayaquil. Archivo Histórico del Guayas.</li>
-        <li>Olmedo, José Joaquín. (1896). Poesías. París, Garnier Hermanos.</li>
-        <li>Olmedo, José Joaquín. (1917). La victoria de Junín, canto a Bolívar. s.l., Impr. Municipal.</li>
-        <li>Olmedo, José Joaquín de. (1976). Alfabeto para un niño, canción al nueve de octubre, canto a Guayaquil y décimas a Guayaquil. Guayaquil, Impr. Municipal.</li>
-        <li>Olmedo, José Joaquín de. (1945). Obras completas: poesías. Quito, Tall. Gráf. Nacionales. Clásicos Ecuatorianos; v. 5.</li>
-        <li>Olmedo, José Joaquín de. (1975). La victoria de Junín, canto a Bolívar. Guayaquil, Imp. Municipal.</li>
-        <li>Olmedo, José Joaquín de. (1975). La victoria de Junín, canto a Bolívar. Quito, Offset Graba.</li>
-        <li>Olmedo, José Joaquín de. (2006). Alfabeto para un niño. Guayaquil, Municipalidad de Guayaquil. Dirección de Acción Social y Educación. II Bienal Nacional de Arte No Visual.</li>
-        <li>Olmedo, José Joaquín de. (s.f.). Poesías. Barcelona, Casa Editorial MAUCCI.</li>
-        <li>Rendón, Víctor Manuel. Olmedo: Homme D'etat el poete americaín chautre de Bolívar. (s.f.) París, Librairie Nilsson.</li>
-        <li>Reseña histórica de la inauguración de la estatua de Olmedo en Guayaquil el 9 de octubre de 1892. (1893). Guayaquil, El Tiempo.</li>
-        <li>Rodríguez Castelo, Hernán (2009). Olmedo: el hombre y el escritor. Quito, Academia Nacional de Historia.</li>
-        <li>Vásconez, Francisco. (1920). Olmedo y sus obras: estudio histórico-crítico. Guayaquil, Impr. Gutenberg.</li>
-        <li>Vásquez, Misael, Padre, S. I. (1931). La victoria de Junín: canto a Bolívar. Quito, Ecuatoriana. Folletos Nacionales, Serie 3, t. 83.</li>
-        <li>Vallejo, R. (2013). Olmedo, cantautor de la independencia. La victoria de Junín. Canto a Bolívar. Universidad Andina Simón Bolívar. Ediciones Doce Calles. Corporación Editora Nacional, 35-73.</li>
-        <li>Guevara, Dario (1958). Olmedo: Actor y cantor de la gran epopeya libertadora de América. Casa de la Cultura Ecuatoriana, Quito.</li>
+        <li>Olmedo, José Joaquin. (1826) La victoria de Junín. Canto a Bolívar. reimpreso en Londres. 80 páginas.</li>
+        <li>...</li>
       </ul>
 
-      <h3 id="notas">Área 6: Notas</h3>
-      <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar durante el primer semestre de 1825. Las cartas han sido documentadas en diferentes publicaciones.</p>
+      <h3>Área 6: Notas</h3>
+      <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar...</p>
     </div>
 
-    <!-- COLUMNA DERECHA: IMAGEN + BOTONES -->
+    <!-- Columna derecha: imagen + botones -->
     <div class="lado-derecho">
       <img src="manuscrito.png" alt="Imagen del manuscrito" />
       <div class="botones">
@@ -241,7 +181,3 @@
 
 </body>
 </html>
-
-
-
-
