@@ -4,38 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ficha Archivística - Victoria de Junín</title>
-  <link rel="stylesheet" href="estilo.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      background: #fff;
     }
 
     /* CABECERA */
     header {
       display: flex;
       align-items: center;
-      width: 100%;
-      background-color: #f5f5f5;
+      justify-content: center;
+      background-color: #002c5c;
+      color: white;
       padding: 20px 40px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
     }
 
     header img.logo {
-      max-width: 120px;
+      max-width: 80px;
       height: auto;
-      margin-right: 30px;
+      position: absolute;
+      left: 40px;
     }
 
     header .titulo-header {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
 
     header .titulo-header h1 {
@@ -45,7 +45,7 @@
 
     header .titulo-header h2 {
       margin: 0;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: normal;
       margin-top: 5px;
     }
@@ -55,8 +55,7 @@
       display: flex;
       gap: 20px;
       max-width: 1200px;
-      align-items: flex-start;
-      justify-content: center;
+      margin: 20px auto;
       padding: 20px;
     }
 
@@ -79,12 +78,13 @@
     .lado-derecho img {
       max-width: 300px;
       height: auto;
+      border: 1px solid #ddd;
     }
 
     .botones {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 8px;
       width: 100%;
       align-items: center;
     }
@@ -92,24 +92,27 @@
     .botones a {
       text-decoration: none;
       width: 100%;
+      text-align: center;
     }
 
     .botones button {
       padding: 10px 15px;
       border: none;
-      background-color: #444;
+      background-color: #002c5c;
       color: white;
       border-radius: 5px;
       cursor: pointer;
       width: 150px;
+      font-weight: bold;
     }
 
     .botones button:hover {
-      background-color: #666;
+      background-color: #004080;
     }
 
     h3 {
       margin-top: 20px;
+      color: #002c5c;
     }
 
     ul {
@@ -163,60 +166,55 @@
 
       <h3>Área 2: Contexto</h3>
       <p><strong>Nombre del productor:</strong> José Joaquin de Olmedo y Maruri (1780-1847)</p>
-      <p><strong>Historia institucional:</strong> José Joaquín Olmedo (Guayaquil, 1780-1847) fue un destacado escritor, político y abogado. Considerado uno de los grandes poetas de la literatura hispanoamericana, su obra más célebre, La victoria de Junín. Canto a Bolívar (1825)...</p>
+      <p><strong>Historia institucional:</strong> José Joaquín Olmedo (Guayaquil, 1780-1847) fue un destacado escritor, político y abogado...</p>
       <p><strong>Historia archivística:</strong> Se conoce que el documento estuvo en manos de las hermanas Cecile y Losette Torres Caicedo...</p>
       <p><strong>Forma de ingreso:</strong> Donado el 24 abril 1987, según razón notarial.</p>
 
       <h3>Área 3: Contenido y estructura</h3>
-      <p><strong>Alcance y contenido:</strong> Descripción poética en ochocientos doce (812) versos, escritos a mano, de los hechos ocurridos en las batallas de Junín y Ayacucho...</p>
-      <p><strong>Valoración, selección, eliminación:</strong> Para la presente postulación, este documento ha sido parte de un proceso de valoración y selección...</p>
-      <p><strong>Organización:</strong> El sistema de preservación que se ha organizado por la administración municipal...</p>
+      <p><strong>Alcance y contenido:</strong> Descripción poética en ochocientos doce (812) versos...</p>
+      <p><strong>Valoración, selección, eliminación:</strong> Para la presente postulación...</p>
+      <p><strong>Organización:</strong> El sistema de preservación que se ha organizado...</p>
 
       <h3>Área 4: Condiciones de acceso y uso</h3>
       <p><strong>Condiciones de acceso:</strong> El acceso físico al manuscrito está restringido...</p>
-      <p><strong>Condiciones de reproducción:</strong> Para reproducción del documento físico únicamente se admiten fotografías sin flash.</p>
-      <p><strong>Lengua y escritura:</strong> Español manuscrito, caligrafía cursiva.</p>
-      <p><strong>Características físicas:</strong> El manuscrito está encuadernado en pasta dura, con páginas de guarda, y conservado en una caja de cartón...</p>
-      <p><strong>Instrumentos de descripción:</strong> Existe la ficha electrónica del manuscrito: <a href="https://bmg2025.github.io/" target="_blank">https://bmg2025.github.io/</a></p>
+      <p><strong>Condiciones de reproducción:</strong> Solo se admiten fotografías sin flash.</p>
+      <p><strong>Lengua y escritura:</strong> Español manuscrito.</p>
+      <p><strong>Características físicas:</strong> Encuadernado en pasta dura...</p>
+      <p><strong>Instrumentos de descripción:</strong> Existe ficha electrónica: 
+        <a href="https://bmg2025.github.io/" target="_blank">https://bmg2025.github.io/</a></p>
 
       <h3>Área 5: Documentación asociada</h3>
       <p><strong>Nota de Publicaciones:</strong></p>
       <ul>
         <li>Olmedo, José Joaquin. (1826) La victoria de Junín. Canto a Bolívar. Impreso en París. 100 páginas.</li>
-        <li>Olmedo, José Joaquin. (1826) La victoria de Junín. Canto a Bolívar. reimpreso en Londres. 80 páginas.</li>
-        <li>Olmedo, José Joaquin. (1883) La victoria de Junín. Canto a Bolívar. impreso en Londres. 72 páginas.</li>
+        <li>Olmedo, José Joaquin. (1826) Reimpreso en Londres. 80 páginas.</li>
+        <li>Olmedo, José Joaquin. (1883) Londres. 72 páginas.</li>
         <li>Andrade Reimers, Luis. (1993). Olmedo : el estadista. Quito, Ediguías.</li>
         <li>Carbo, Pedro, (1880). Biografía de Olmedo. Guayaquil, La Nación.</li>
-        <li>Castillo, Abel Romeo. (1973). Olmedo entre San Martin y Bolívar. Guayaquil, Casa de la Cultura Ecuatoriana, Núcleo del Guayas.</li>
-        <li>Castillo, Abel Romeo. (1980). Olmedo : prócer y poeta. Guayaquil, Instituto Olmediano del Ecuador.</li>
-        <li>Espinoza Pólit, Aurelio. (1955). Olmedo en la historia y en las letras; siete estudios. Quito, Clásica.</li>
-        <li>Gómez Iturralde, José Antonio. Paredes Ramírez, Willington. (2001). Vigencia y permanencia de Olmedo. Guayaquil, Banco Central del Ecuador. Archivo Histórico del Guayas.</li>
-        <li>Herrera, Pablo (1887). Apuntes biográficos de D. José Joaquín Olmedo. Quito, Impr. de Juan Pablo Sanz.</li>
-        <li>Icaza, Luis Noboa (1979). El monumento a José Joaquín de Olmedo en Guayaquil : homenaje al poeta en el bicentenario de su nacimiento. Guayaquil, Separata de la Revista del Archivo Histórico del Guayas, no. 15</li>
-        <li>La victoria de Junín : edición de estudio. (1919). Quito, Tip. de la Prensa Católica. Folletos Nacionales, Serie 1, t. 327</li>
-        <li>Mariscal de Guevara, María Luisa. (1981). José Joaquín de Olmedo : poeta y luchador. Guayaquil, Del Pacífico.</li>
-        <li>Moreno Mora, Vicente. (1946). José Joaquín Olmedo. Cuenca, Tall. Tip. del Concejo Cantonal de Cuenca.</li>
-        <li>Muñoz Vicuña, Elías. (1980). Biografía de Olmedo: ensayo. Guayaquil. Imp. de la Universidad de Guayaquil.</li>
-        <li>Noboa Icaza, Luis. (1973). Estudios sobre Olmedo. Guayaquil. Junta Cívica de Guayaquil. Archivo Histórico del Guayas.</li>
-        <li>Olmedo, José Joaquín. (1896). Poesías. París, Garnier Hermanos.</li>
-        <li>Olmedo, José Joaquín. (1917). La victoria de Junín, canto a Bolívar. s.l., Impr. Municipal.</li>
-        <li>Olmedo, José Joaquín de. (1976). Alfabeto para un niño, canción al nueve de octubre, canto a Guayaquil y décimas a Guayaquil. Guayaquil, Impr. Municipal.</li>
-        <li>Olmedo, José Joaquín de. (1945). Obras completas : poesías. Quito, Tall. Gráf. Nacionales. Clásicos Ecuatorianos ; v. 5.</li>
-        <li>Olmedo, José Joaquín de. (1975). La victoria de Junín, canto a Bolívar. Guayaquil, Imp. Municipal.</li>
-        <li>Olmedo, José Joaquín de. (1975). La victoria de Junín, canto a Bolívar. Quito, Offset Graba.</li>
-        <li>Olmedo, José Joaquín de. (2006). Alfabeto para un niño. Guayaquil, Municipalidad de Guayaquil. Dirección de Acción Social y Educación. II Bienal Nacional de Arte No Visual.</li>
-        <li>Olmedo, José Joaquín de. (s.f.). Poesías. Barcelona, Casa Editorial MAUCCI.</li>
-        <li>Rendón, Víctor Manuel. Olmedo : Homme D'etat el poete americaín chautre de Bolívar. (s.f.) París Librairie Nilsson.</li>
-        <li>Reseña histórica de la inauguración de la estatua de Olmedo en Guayaquil el 9 de octubre de 1892. (1893). Guayaquil, El Tiempo.</li>
-        <li>Rodríguez Castelo, Hernán (2009). Olmedo : el hombre y el escritor. Quito, Academia Nacional de Historia.</li>
-        <li>Vásconez, Francisco. (1920). Olmedo y sus obras : estudio histórico-crítico. Guayaquil, Impr. Gutenberg.</li>
-        <li>Vásquez, Misael, Padre, S. I. (1931). La victoria de Junín : canto a Bolívar. Quito, Ecuatoriana. Folletos Nacionales, Serie 3, t. 83</li>
-        <li>Vallejo, R. (2013). Olmedo, cantautor de la independencia. La victoria de Junín. Canto a Bolívar. Universidad Andina Simón Bolívar. Ediciones Doce Calles. Corporación Editora Nacional, 35-73</li>
-        <li>Guevara, Dario (1958). Olmedo: Actor y cantor de la gran epopeya libertadora de América. Casa de la Cultura Ecuatoriana, Quito.</li>
+        <li>Castillo, Abel Romeo. (1973). Olmedo entre San Martin y Bolívar. Guayaquil.</li>
+        <li>Castillo, Abel Romeo. (1980). Olmedo : prócer y poeta. Guayaquil.</li>
+        <li>Espinoza Pólit, Aurelio. (1955). Olmedo en la historia y en las letras. Quito.</li>
+        <li>Gómez Iturralde, José Antonio. (2001). Vigencia y permanencia de Olmedo. Guayaquil.</li>
+        <li>Herrera, Pablo (1887). Apuntes biográficos. Quito.</li>
+        <li>Icaza, Luis Noboa (1979). El monumento a José Joaquín de Olmedo en Guayaquil.</li>
+        <li>La victoria de Junín : edición de estudio. (1919). Quito.</li>
+        <li>Mariscal de Guevara, María Luisa. (1981). José Joaquín de Olmedo : poeta y luchador. Guayaquil.</li>
+        <li>Moreno Mora, Vicente. (1946). José Joaquín Olmedo. Cuenca.</li>
+        <li>Muñoz Vicuña, Elías. (1980). Biografía de Olmedo. Guayaquil.</li>
+        <li>Noboa Icaza, Luis. (1973). Estudios sobre Olmedo. Guayaquil.</li>
+        <li>Olmedo, José Joaquín. (1896). Poesías. París.</li>
+        <li>Olmedo, José Joaquín. (1917). La victoria de Junín. Quito.</li>
+        <li>Olmedo, José Joaquín. (1976). Obras varias. Guayaquil.</li>
+        <li>Olmedo, José Joaquín. (1945). Obras completas : poesías. Quito.</li>
+        <li>Olmedo, José Joaquín. (1975). La victoria de Junín. Quito.</li>
+        <li>Olmedo, José Joaquín. (2006). Alfabeto para un niño. Guayaquil.</li>
+        <li>Rodríguez Castelo, Hernán (2009). Olmedo : el hombre y el escritor. Quito.</li>
+        <li>Vásconez, Francisco. (1920). Olmedo y sus obras. Guayaquil.</li>
+        <li>Vallejo, R. (2013). Olmedo, cantautor de la independencia.</li>
       </ul>
 
       <h3>Área 6: Notas</h3>
-      <p>El manuscrito fue descrito en intercambios epistolares entre José Joaquin de Olmedo y Simón Bolívar durante el primer semestre de 1825. Las cartas han sido documentadas en diferentes publicaciones.</p>
+      <p>El manuscrito fue descrito en intercambios epistolares entre Olmedo y Bolívar en 1825.</p>
     </div>
 
     <!-- LADO DERECHO: IMAGEN + BOTONES PDF -->
@@ -231,7 +229,6 @@
 
 </body>
 </html>
-
 
 
 
